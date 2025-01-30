@@ -62,42 +62,42 @@ function App() {
         <h2>Meet Our Team</h2>
         <div className="team-container">
           <div className="team-member">
-            <img src="AshwinRaoPhoto.jpg" alt="Team Member 1" />
+            <img src="AshwinRaoPhoto.jpg" alt="" />
             <h3>Connor Nguyen</h3>
             <p>Team Leader</p>
           </div>
           <div className="team-member">
-            <img src="AshwinRaoPhoto.jpg" alt="Team Member 2" />
+            <img src="AshwinRaoPhoto.jpg" alt="" />
             <h3>Ashwin Rao</h3>
             <p>Marketing Specialist</p>
           </div>
           <div className="team-member">
-            <img src="AshwinRaoPhoto.jpg" alt="Team Member 3" />
+            <img src="AshwinRaoPhoto.jpg" alt="" />
             <h3>Mark Johnson</h3>
             <p>Developer</p>
           </div>
           <div className="team-member">
-            <img src="AshwinRaoPhoto.jpg" alt="Team Member 1" />
+            <img src="AshwinRaoPhoto.jpg" alt="" />
             <h3>Connor Nguyen</h3>
             <p>Team Leader</p>
           </div>
           <div className="team-member">
-            <img src="AshwinRaoPhoto.jpg" alt="Team Member 2" />
+            <img src="AshwinRaoPhoto.jpg" alt="" />
             <h3>Ashwin Rao</h3>
             <p>Marketing Specialist</p>
           </div>
           <div className="team-member">
-            <img src="AshwinRaoPhoto.jpg" alt="Team Member 3" />
+            <img src="AshwinRaoPhoto.jpg" alt="" />
             <h3>Mark Johnson</h3>
             <p>Developer</p>
           </div>
           <div className="team-member">
-            <img src="AshwinRaoPhoto.jpg" alt="Team Member 1" />
+            <img src="AshwinRaoPhoto.jpg" alt="" />
             <h3>Connor Nguyen</h3>
             <p>Team Leader</p>
           </div>
           <div className="team-member">
-            <img src="AshwinRaoPhoto.jpg" alt="Team Member 2" />
+            <img src="AshwinRaoPhoto.jpg" alt="" />
             <h3>Ashwin Rao</h3>
             <p>Marketing Specialist</p>
           </div>
@@ -119,21 +119,18 @@ function App() {
       <section id="photos">
         <h2>Photos</h2>
         <div className="photo-gallery">
-          <img src="kipchoge.jpg" alt="Photo 1" />
-          <img src="kipchoge.jpg" alt="Photo 2" />
-          <img src="kipchoge.jpg" alt="Photo 3" />
-          <img src="kipchoge.jpg" alt="Photo 1" />
-          <img src="kipchoge.jpg" alt="Photo 2" />
-          <img src="kipchoge.jpg" alt="Photo 3" />
-          <img src="kipchoge.jpg" alt="Photo 1" />
-          <img src="kipchoge.jpg" alt="Photo 2" />
-          <img src="kipchoge.jpg" alt="Photo 3" />
-          <img src="kipchoge.jpg" alt="Photo 1" />
-          <img src="kipchoge.jpg" alt="Photo 2" />
-          <img src="kipchoge.jpg" alt="Photo 3" />
-          <img src="kipchoge.jpg" alt="Photo 1" />
-          <img src="kipchoge.jpg" alt="Photo 2" />
-          <img src="kipchoge.jpg" alt="Photo 3" />
+          <img src="kipchoge.jpg" alt="" />
+          <img src="kipchoge.jpg" alt="" />
+          <img src="kipchoge.jpg" alt="" />
+          <img src="kipchoge.jpg" alt="" />
+          <img src="kipchoge.jpg" alt="" />
+          <img src="kipchoge.jpg" alt="" />
+          <img src="kipchoge.jpg" alt="" />
+          <img src="kipchoge.jpg" alt="" />
+          <img src="kipchoge.jpg" alt="" />
+          <img src="kipchoge.jpg" alt="" />
+          <img src="kipchoge.jpg" alt="" />
+          <img src="kipchoge.jpg" alt="" />
         </div>
       </section>
 
