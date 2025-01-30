@@ -1,38 +1,255 @@
-.App {
+/* Reset default margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Title styles */
+header {
+  text-align: center;
+  padding: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  
+}
+
+/* Centered Image */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 225px); /* Adjusted height to fit navbar */
+}
+
+.image-container img {
+  width: 100%;  /* Adjust the percentage to control size */
+  max-width: 800px; /* Set a max width to prevent it from getting too big */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Bottom Navigation Bar */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #333;
+  padding: 15px 0;
+}
+
+.bottom-nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.bottom-nav li {
+  margin: 0 20px;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.bottom-nav a:hover {
+  color: #ffcc00;
+}
+/* Our Team Section */
+#our-team {
+  margin-top:10%;
+  padding: 40px;
+  background-color: #f9f9f9;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#our-team h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.team-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.team-member {
+  width: 250px;
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  font-size: 22px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.team-member p {
+  font-size: 18px;
+  color: #666;
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+}
+
+.team-member:hover h3 {
+  color: #ffcc00; /* Highlight the name on hover */
+}
+/* Add extra space for scrolling effect - Increase the height here */
+.spacer {
+  height: 3000px; /* Increased height for a much longer page */
+}
+/* App.css */
+
+/* Calendar Section Styles */
+#calendar {
+  margin-top: 50px;
+  padding: 50px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.calendar-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#calendar h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+iframe {
+  border: none;
+  width: 100%;
+  height: 600px;
+}
+
+@media (max-width: 768px) {
+  iframe {
+    height: 400px; /* Adjust height for mobile */
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+
+/* Photo Section Styling */
+#photos {
+  padding: 50px 0;
+  background-color: #f7f7f7; /* Light background */
+  padding-bottom:10%;
+}
+
+#photos h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 0 10%;
+}
+
+.photo-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.photo-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Make sure the gallery is responsive */
+@media (max-width: 768px) {
+  .photo-gallery {
+    padding: 0 5%;
+  }
+}
+/* Contact Us Section */
+#contact-us {
+  padding: 50px 0;
+  background-color: #f7f7f7;
+  text-align: center;
+  padding-bottom:15%;
+}
+
+#contact-us h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#contact-us form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact-us .form-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+#contact-us label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#contact-us input, 
+#contact-us textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#contact-us button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#contact-us button:hover {
+  background-color: #45a049;
 }
