@@ -12,7 +12,6 @@ header {
   padding: 20px;
   font-size: 32px;
   font-weight: bold;
-  
 }
 
 /* Centered Image */
@@ -37,6 +36,7 @@ header {
   width: 100%;
   background: #333;
   padding: 15px 0;
+  z-index:1;
 }
 
 .bottom-nav ul {
@@ -59,9 +59,10 @@ header {
 .bottom-nav a:hover {
   color: #ffcc00;
 }
+
 /* Our Team Section */
 #our-team {
-  margin-top:10%;
+  margin-top: 10%;
   padding: 40px;
   background-color: #f9f9f9;
   text-align: center;
@@ -115,11 +116,11 @@ header {
 .team-member:hover h3 {
   color: #ffcc00; /* Highlight the name on hover */
 }
-/* Add extra space for scrolling effect - Increase the height here */
+
+/* Spacer for scrolling effect */
 .spacer {
-  height: 3000px; /* Increased height for a much longer page */
+  height: 3000px;
 }
-/* App.css */
 
 /* Calendar Section Styles */
 #calendar {
@@ -151,14 +152,11 @@ iframe {
   }
 }
 
-
-
-
 /* Photo Section Styling */
 #photos {
   padding: 50px 0;
-  background-color: #f7f7f7; /* Light background */
-  padding-bottom:10%;
+  background-color: #f7f7f7;
+  padding-bottom: 10%;
 }
 
 #photos h2 {
@@ -188,18 +186,19 @@ iframe {
   transform: scale(1.05);
 }
 
-/* Make sure the gallery is responsive */
+/* Ensure the gallery is responsive */
 @media (max-width: 768px) {
   .photo-gallery {
     padding: 0 5%;
   }
 }
+
 /* Contact Us Section */
 #contact-us {
   padding: 50px 0;
   background-color: #f7f7f7;
   text-align: center;
-  padding-bottom:15%;
+  padding-bottom: 15%;
 }
 
 #contact-us h2 {
@@ -230,7 +229,7 @@ iframe {
   font-weight: bold;
 }
 
-#contact-us input, 
+#contact-us input,
 #contact-us textarea {
   width: 100%;
   padding: 10px;
@@ -252,4 +251,53 @@ iframe {
 
 #contact-us button:hover {
   background-color: #45a049;
+}
+
+/* Lightbox Style for Image Enlargement */
+.lightbox {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+.lightbox .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.lightbox .close-btn:hover {
+  color: #ffcc00;
+}
+#instagram{
+  margin-top:1%;
+  
+}
+/* Add this to position the logo at the top-right */
+.logo {
+  position: fixed;
+  top: 10px; /* Adjust as needed for vertical spacing */
+  right: 10px; /* Adjust as needed for horizontal spacing */
+  z-index: 1000; /* Ensure it's on top of other elements */
+  width: 70px; /* Adjust size of the logo */
+  height: auto; /* Maintain aspect ratio */
 }
