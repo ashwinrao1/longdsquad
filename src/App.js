@@ -70,12 +70,13 @@ function App() {
   return (
     <div className="App">
       <header>
+        
         <h1>Long Distance Squad</h1>
         <img src="Pictures/Logo.png" alt="Logo" className="logo" />  {/* Add this line for the logo */}
       </header>
 
       <div className="image-container">
-        <img src="DSC_3306.png" alt="" />
+        <img src="Pictures/DSC_3306.png" alt="" />
       </div>
 
       <nav className="bottom-nav">
@@ -119,12 +120,12 @@ function App() {
         <h2>Meet Our Team</h2>
         <div className="team-container">
           <div className="team-member">
-            <img src="AshwinRaoPhoto.jpg" alt="" />
+            <img src="Pictures/AshwinRaoPhoto.jpg" alt="" />
             <h3>Connor Nguyen</h3>
             <p>Team Leader</p>
           </div>
           <div className="team-member">
-            <img src="AshwinRaoPhoto.jpg" alt="" />
+            <img src="Pictures/AshwinRaoPhoto.jpg" alt="" />
             <h3>Connor Nguyen</h3>
             <p>Team Leader</p>
           </div>
