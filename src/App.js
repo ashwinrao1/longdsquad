@@ -208,16 +208,7 @@ We are organizing a community-wide walk/run event at Fonde Park to:<br />
             <h3>Aaron Chu</h3>
             <p>Hypeman</p>
           </div>
-          <div className="team-member">
-            <img src="Pictures/AdrianPhoto.png" alt="" />
-            <h3>Adrian Pomer</h3>
-            <p>Treasurer</p>
-          </div>
-          <div className="team-member">
-            <img src="Pictures/AdrianPhoto.png" alt="" />
-            <h3>Adrian Pomer</h3>
-            <p>Treasurer</p>
-          </div>
+          
           {/* Repeat team members as needed */}
         </div>
       </section>
