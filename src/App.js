@@ -254,7 +254,7 @@ We are organizing a community-wide walk/run event at Fonde Park to:<br />
           </div>
           <button type="submit">Send Message</button>
         </form>
-        <h3 id="instagram">@longdsquadhtx on Instagram!</h3>
+        <h3 id="instagram">@longdsquad.htx on Instagram!</h3>
       </section>
 
     </div>
