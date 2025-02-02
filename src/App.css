@@ -4,8 +4,20 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
-}
+  
 
+}
+#home {
+  background-color: white;
+}
+section {
+  margin: 0;
+  padding: 50px 0; /* Keep padding but remove margin */
+  background-color: #f4f4f4; /* Ensure sections match */
+}
+body {
+  background-color: #f4f4f4f4;
+}
 /* Title styles */
 header {
   text-align: center;
@@ -29,24 +41,28 @@ header {
   border-radius: 10px; /* Optional: rounded corners */
 }
 
-/* Bottom Navigation Bar */
 .bottom-nav {
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
   background: #333;
   padding: 15px 0;
-  z-index:1;
+  z-index: 9999; /* Ensure it's above other elements */
 }
+
+
 
 .bottom-nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
+  background:none;
 }
 
 .bottom-nav li {
   margin: 0 20px;
+  background:none;
 }
 
 .bottom-nav a {
@@ -54,6 +70,7 @@ header {
   color: white;
   font-size: 18px;
   transition: color 0.3s;
+  
 }
 
 .bottom-nav a:hover {
@@ -64,7 +81,7 @@ header {
 #our-team {
   margin-top: 10%;
   padding: 40px;
-  background-color: #f9f9f9;
+  background-color: white;
   text-align: center;
 }
 
@@ -89,13 +106,22 @@ header {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
 }
 
 .team-member img {
-  width: 100%;
-  height: auto;
-  border-radius: 50%;
+  width: 200px; /* Fixed width to keep the image consistent */
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover; /* Ensures the image is cropped to fit without stretching */
+  
   margin-bottom: 15px;
+}
+
+#diff {
+  height: 200px; /* Same height as other images */
+  width: 200px;  /* Ensure same width as other images */
 }
 
 .team-member h3 {
@@ -124,12 +150,26 @@ header {
 
 /* Calendar Section Styles */
 #calendar {
+  background-color: white;
   margin-top: 50px;
+  padding: 50px;
+  
+  text-align: center;
+}
+/* Calendar Section Styles */
+#aboutUs {
+  background-color: #f4f4f4;
+  margin:0;
   padding: 50px;
   background-color: #f4f4f4;
   text-align: center;
+  
 }
+#aboutUs h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
 
+}
 .calendar-container {
   max-width: 900px;
   margin: 0 auto;
@@ -156,7 +196,8 @@ iframe {
 #photos {
   padding: 50px 0;
   background-color: #f7f7f7;
-  padding-bottom: 10%;
+  padding-bottom:0;
+  margin-bottom:0;
 }
 
 #photos h2 {
@@ -195,6 +236,7 @@ iframe {
 
 /* Contact Us Section */
 #contact-us {
+  background-color: #f4f4f4;
   padding: 50px 0;
   background-color: #f7f7f7;
   text-align: center;
