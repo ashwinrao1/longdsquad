@@ -4,41 +4,43 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
-  
-
 }
+
 #home {
   background-color: white;
+  text-align: center;
+  padding-bottom: 50px;
 }
+
 section {
-  margin: 0;
-  padding: 50px 0; /* Keep padding but remove margin */
-  background-color: #f4f4f4; /* Ensure sections match */
+  padding: 50px 0;
+  background-color: #f4f4f4;
 }
+
 body {
   background-color: #f4f4f4f4;
 }
-/* Title styles */
+
+/* Header styles */
 header {
-  text-align: center;
   padding: 20px;
   font-size: 32px;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
 /* Centered Image */
 .image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - 225px); /* Adjusted height to fit navbar */
+  margin: 30px auto;
+  max-width: 800px;
 }
 
 .image-container img {
-  width: 100%;  /* Adjust the percentage to control size */
-  max-width: 800px; /* Set a max width to prevent it from getting too big */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Optional: rounded corners */
+  width: 100%;
+  border-radius: 10px;
 }
 
 .bottom-nav {
@@ -48,21 +50,19 @@ header {
   width: 100%;
   background: #333;
   padding: 15px 0;
-  z-index: 9999; /* Ensure it's above other elements */
+  z-index: 9999;
 }
-
-
 
 .bottom-nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
-  background:none;
+  background: none;
 }
 
 .bottom-nav li {
   margin: 0 20px;
-  background:none;
+  background: none;
 }
 
 .bottom-nav a {
@@ -70,16 +70,16 @@ header {
   color: white;
   font-size: 18px;
   transition: color 0.3s;
-  
+  padding: 10px 15px;
 }
 
-.bottom-nav a:hover {
+.bottom-nav a:hover,
+.bottom-nav a.active {
   color: #ffcc00;
 }
 
 /* Our Team Section */
 #our-team {
-  margin-top: 10%;
   padding: 40px;
   background-color: white;
   text-align: center;
@@ -108,20 +108,19 @@ header {
   transition: transform 0.3s;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center horizontally */
+  align-items: center;
 }
 
 .team-member img {
-  width: 200px; /* Fixed width to keep the image consistent */
-  height: 200px; /* Fixed height for uniformity */
-  object-fit: cover; /* Ensures the image is cropped to fit without stretching */
-  
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
   margin-bottom: 15px;
 }
 
 #diff {
-  height: 200px; /* Same height as other images */
-  width: 200px;  /* Ensure same width as other images */
+  height: 200px;
+  width: 200px;
 }
 
 .team-member h3 {
@@ -140,12 +139,7 @@ header {
 }
 
 .team-member:hover h3 {
-  color: #ffcc00; /* Highlight the name on hover */
-}
-
-/* Spacer for scrolling effect */
-.spacer {
-  height: 3000px;
+  color: #ffcc00;
 }
 
 /* Calendar Section Styles */
@@ -153,23 +147,9 @@ header {
   background-color: white;
   margin-top: 50px;
   padding: 50px;
-  
   text-align: center;
 }
-/* Calendar Section Styles */
-#aboutUs {
-  background-color: #f4f4f4;
-  margin:0;
-  padding: 50px;
-  background-color: #f4f4f4;
-  text-align: center;
-  
-}
-#aboutUs h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
 
-}
 .calendar-container {
   max-width: 900px;
   margin: 0 auto;
@@ -188,7 +168,7 @@ iframe {
 
 @media (max-width: 768px) {
   iframe {
-    height: 400px; /* Adjust height for mobile */
+    height: 400px;
   }
 }
 
@@ -196,8 +176,8 @@ iframe {
 #photos {
   padding: 50px 0;
   background-color: #f7f7f7;
-  padding-bottom:0;
-  margin-bottom:0;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 #photos h2 {
@@ -222,12 +202,10 @@ iframe {
   transition: transform 0.3s ease-in-out;
 }
 
-/* Hover effect */
 .photo-gallery img:hover {
   transform: scale(1.05);
 }
 
-/* Ensure the gallery is responsive */
 @media (max-width: 768px) {
   .photo-gallery {
     padding: 0 5%;
@@ -236,9 +214,8 @@ iframe {
 
 /* Contact Us Section */
 #contact-us {
-  background-color: #f4f4f4;
-  padding: 50px 0;
   background-color: #f7f7f7;
+  padding: 50px 0;
   text-align: center;
   padding-bottom: 15%;
 }
@@ -297,7 +274,7 @@ iframe {
 
 /* Lightbox Style for Image Enlargement */
 .lightbox {
-  display: none; /* Hidden by default */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -330,16 +307,87 @@ iframe {
 .lightbox .close-btn:hover {
   color: #ffcc00;
 }
-#instagram{
-  margin-top:1%;
-  
+
+#instagram {
+  margin-top: 1%;
 }
+
 /* Add this to position the logo at the top-right */
 .logo {
-  position: fixed;
-  top: 10px; /* Adjust as needed for vertical spacing */
-  right: 10px; /* Adjust as needed for horizontal spacing */
-  z-index: 1000; /* Ensure it's on top of other elements */
-  width: 70px; /* Adjust size of the logo */
-  height: auto; /* Maintain aspect ratio */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 70px;
+  height: auto;
+  z-index: 1000;
+}
+
+/* Community Project Section Styles */
+#community-project {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center; /* Center align the entire section */
+}
+
+#community-project h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.community-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center; /* Center align the content within the container */
+}
+
+.community-container h4,
+.community-container h5 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.community-container p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #555;
+  text-align: center; /* Center align paragraphs */
+}
+
+.community-container ul {
+  list-style-type: disc;
+  margin-left: auto; /* Center align the list */
+  margin-right: auto; /* Center align the list */
+  margin-bottom: 20px;
+  text-align: left; /* Keep list items left-aligned */
+  width: fit-content; /* Make the list width fit its content */
+}
+
+.community-container li {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: left; /* Keep list items left-aligned */
+}
+
+.community-container strong {
+  font-weight: bold;
+  color: #333;
+}
+/* Home Page About Text */
+.about-home {
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.about-home p {
+  font-size: 1.2em;
+  color: #333;
+  line-height: 1.6;
 }
